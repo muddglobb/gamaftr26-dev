@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 const H1 = ({ className, children, ...props }) => (
   <h1 className={cn("text-[46px] leading-[69px] md:text-[68px] md:leading-[102px]", className)} {...props}>
-    {children}
+    {children} 
   </h1>
 );
 
