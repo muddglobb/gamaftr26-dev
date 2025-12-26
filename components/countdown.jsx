@@ -47,17 +47,15 @@ const Countdown = ({ targetDate }) => {
   const timerKeys = Object.keys(timeLeft);
 
   return (
-    // 1. PAGE BACKGROUND (The thing that gets blurred)
-    // Replace the gradient below with your <Image /> or specific background color
     <div className="flex items-center justify-center p-4 bg-transparent">
       
       {/* 2. THE UNIFIED GLASS PANEL */}
       <div className={`
         relative z-10 
-        /* Layout */
-        flex flex-col md:flex-row items-center justify-center gap-5
+        /* Layout - CHANGED: Removed flex-col/md:flex-row. It is now always row. */
+        flex flex-row items-center justify-center gap-5
         p-9 pb-4 rounded-3xl
-        /* Glass Effect (Single Container) */
+        /* Glass Effect */
         backdrop-blur-md bg-white/5 shadow-2xl
         /* Green Border */
         border-3 border-green-700
@@ -87,9 +85,9 @@ const Countdown = ({ targetDate }) => {
                 </span>
               </div>
 
-              {/* Colon Separator (Hidden on mobile or after the last item) */}
+              {/* Colon Separator - CHANGED: Removed 'hidden md:block'. It is now always visible. */}
               {index < timerKeys.length - 1 && (
-                <span className="hidden md:block text-green-800 text-4xl font-bold pb-6 ml-5">
+                <span className="text-green-800 text-4xl font-bold pb-6 ml-5">
                   :
                 </span>
               )}
