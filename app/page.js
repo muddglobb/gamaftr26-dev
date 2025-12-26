@@ -2,10 +2,13 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import RightArrow from "@/components/icons/RightArrow";
 import { H1, H2, H3, H4, H5, H6, H7, B1, B2, B3, B4, B5 } from "@/components/elements/typography";
+import Hero from "../components/hero"
 
 const Page = () => {
   return (
     <div className="">
+      <Hero></Hero>
+
       <H1>HUMPUBIT</H1>
       <H2>HUMPUBIT</H2>
       <H3>HUMPUBIT</H3>
