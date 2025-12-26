@@ -56,11 +56,11 @@ const Countdown = ({ targetDate }) => {
         relative z-10 
         /* Layout */
         flex flex-col md:flex-row items-center justify-center gap-5
-        p-6 pb-4 rounded-3xl
+        p-9 pb-4 rounded-3xl
         /* Glass Effect (Single Container) */
-        backdrop-blur-xl bg-white/5 shadow-2xl
+        backdrop-blur-md bg-white/5 shadow-2xl
         /* Green Border */
-        border-4 border-green-500
+        border-3 border-green-700
       `}>
         
         {isFinished ? (
@@ -80,16 +80,16 @@ const Countdown = ({ targetDate }) => {
                   tracking-tighter
                   drop-shadow-lg
                 ">
-                  <H4 className="-mt-5 p-0">{timeLeft[interval] < 10 ? `0${timeLeft[interval]}` : timeLeft[interval]}</H4>
+                  <H5 className="-mt-5 p-0">{timeLeft[interval] < 10 ? `0${timeLeft[interval]}` : timeLeft[interval]}</H5>
                 </span>
-                <span className="font-bold text-center uppercase tracking-widest text-xl mt-2">
+                <span className="font-bold text-center uppercase tracking-widest text-xl mt-2 mb-3">
                   {timeLabelsID[interval]}
                 </span>
               </div>
 
               {/* Colon Separator (Hidden on mobile or after the last item) */}
               {index < timerKeys.length - 1 && (
-                <span className="hidden md:block text-green-800 text-4xl font-bold pb-1 ml-5">
+                <span className="hidden md:block text-green-800 text-4xl font-bold pb-6 ml-5">
                   :
                 </span>
               )}
