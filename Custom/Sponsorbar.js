@@ -1,97 +1,97 @@
 "use client";
 import Image from "next/image";
-import {H1, H2, H3, H4, H5, H6, H7, B1, B2, B3, B4, B5} from "@/components/elements/typography";
-import { TypeOutline } from "lucide-react";
-import { useEffect } from "react";
+import { H3, H6 } from "@/components/elements/typography";
 
 export default function Sponsorbar() {
-
-    return (
-        <div 
-            style={{
-                backgroundColor: "#BFDEEB",
-                minHeight: "1560px",
-                padding: "50px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                textAlign: "center",
-                justifyContent: "flex-start",
-            }}
+  return (
+    <section role="region" aria-label="Sponsor section">
+      <div className="
+        bg-[#BFDEEB]
+        min-h-screen
+        px-4 py-10
+        sm:px-8 sm:py-12
+        md:px-12 md:py-16
+        lg:px-16 lg:py-20
+        flex flex-col items-center text-center
+      ">
+    
+        <H3
+          style={{
+            marginBottom: "30px",
+            color: "white",
+            textShadow: `
+              -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000,
+              1px 1px 0 #000,
+              3px 3px 5px rgba(0,0,0,0.5)
+            `,
+          }}
+          className="text-2xl sm:text-3xl md:text-4xl mb-6 md:mb-8"
         >
-            <H3
-                style={{
-                    fontSize: "38px",
-                    marginBottom: "30px",
-                    color: "white",
-                     textShadow: `
-                        /* Outline */
-                        -1px -1px 0 #000,
-                        1px -1px 0 #000,
-                        -1px  1px 0 #000,
-                        1px  1px 0 #000,
+          TERIMA KASIH KEPADA
+        </H3>
 
-                        /* Shadow */
-                        3px 3px 5px rgba(0,0,0,0.5)
-                        `,
-                }}
-            >
-                TERIMA KASIH KEPADA
-            </H3>
-            
-            <H6
-                style={{
-                    fontSize: "30px",
-                    marginBottom: "20px",
-                    color: "#294852",
-                    textShadow: `
-                        /* Outline */
-                        -1px -1px 0 #ffffffff,
-                        1px -1px 0 #ffffffff,
-                        -1px  1px 0 #ffffffff,
-                        1px  1px 0 #ffffffff,  
+        <H6 
+          style={{
+            color: "#294852",
+            textShadow: `
+              -1px -1px 0 #fff,
+              1px -1px 0 #fff,
+              -1px 1px 0 #fff,
+              1px 1px 0 #fff,
+              3px 3px 5px rgba(0,0,0,0.5)
+            `,
+          }}
+          className="text-xl sm:text-2xl md:text-3xl mb-4 md:mb-6"
+        >
+          SPONSOR
+        </H6>
 
-                        /* Shadow */
-                        3px 3px 5px rgba(0,0,0,0.5)
-                        `,
-                }}
-            >
-                SPONSOR
-            </H6>
-        
-            <Image style={{marginBottom: "30px"}}
-                src="/LogoPertamina.webp"
-                width={130}
-                height={130}
-                alt="LogoSponsor" 
+        {/* Sponsor Logos Container */}
+        <div className="w-full max-w-6xl mb-12 md:mb-16">
+          <div className="relative w-full">
+            <Image
+              src="/coming soon.png"
+              width={1200}
+              height={400}
+              alt="Sponsor"
+              loading="lazy"
+              className="w-full h-auto rounded-2xl"
             />
-
-            <H6
-                style={{
-                    fontSize:"30px",
-                    marginBottom:"50px",
-                    color: "#294852",
-                    textShadow: `
-                        /* Outline */
-                        -1px -1px 0 #ffffffff,
-                        1px -1px 0 #ffffffff,
-                        -1px  1px 0 #ffffffff,
-                        1px  1px 0 #ffffffff,  
-                                          
-                        /* Shadow */
-                        3px 3px 5px rgba(0,0,0,0.5)
-                        `,
-                }}
-            >
-                MEDIA PARTNER
-            </H6>
-
-            <Image 
-                src="/LogoPertamina.webp"
-                width={200}
-                height={200}
-                alt="LogoSponsor"    
-            />
+          </div>
         </div>
-    );
+
+        <H6 
+          style={{
+            color: "#294852",
+            textShadow: `
+              -1px -1px 0 #fff,
+              1px -1px 0 #fff,
+              -1px 1px 0 #fff,
+              1px 1px 0 #fff,
+              3px 3px 5px rgba(0,0,0,0.5)
+            `,
+          }}
+          className="text-xl sm:text-2xl md:text-3xl mb-4 md:mb-6"
+        >
+          MEDIA PARTNER
+        </H6>
+
+        {/* Media Partner Logos Container */}
+        <div className="w-full max-w-6xl">
+          <div className="relative w-full">
+            <Image
+              src="/coming soon.png"
+              width={1200}
+              height={400}
+              alt="Media Partner"
+              loading="lazy"
+              className="w-full h-auto rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

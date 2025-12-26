@@ -14,23 +14,53 @@ const TimelineSection = () => {
   const closePopup = () => setSelectedCard(null);
 
   return (
-    <section className="z-1 relative w-full py-20 bg-amazon-200">
-      <div className="absolute left-[-32px] bottom-0 w-[240px] h-[1093px] pointer-events-none" aria-hidden="true">
-        <Image src="/timeline/gunungleft2.png" alt="Timeline Background" fill className="object-contain" />
+    <section className="z-1 relative w-full py-15 bg-amazon-200 overflow-hidden" id="timeline">
+      <div
+        className="absolute left-[-32px] bottom-0 w-[240px] h-[1093px] pointer-events-none"
+        aria-hidden="true"
+      >
+        <Image
+          src="/timeline/gunungleft2.png"
+          alt="Timeline Background"
+          fill
+          className="object-contain"
+        />
       </div>
-      <div className="absolute left-[-64px] bottom-0 w-[240px] h-[1093px] pointer-events-none" aria-hidden="true">
-        <Image src="/timeline/gunungleft1.png" alt="Timeline Background" fill className="object-contain" />
+      <div
+        className="absolute left-[-64px] bottom-0 w-[240px] h-[1093px] pointer-events-none"
+        aria-hidden="true"
+      >
+        <Image
+          src="/timeline/gunungleft1.png"
+          alt="Timeline Background"
+          fill
+          className="object-contain"
+        />
       </div>
-      <div className=" z-0 absolute right-[-32px] bottom-[-180px] w-[240px] h-[1093px] pointer-events-none" aria-hidden="true">
-        <Image src="/timeline/gunungright1.png" alt="Timeline Background" fill className="object-contain" />
+      <div
+        className=" z-0 absolute right-[-32px] bottom-[-180px] w-[240px] h-[1093px] pointer-events-none"
+        aria-hidden="true"
+      >
+        <Image
+          src="/timeline/gunungright1.png"
+          alt="Timeline Background"
+          fill
+          className="object-contain"
+        />
       </div>
-      <div className=" z-0 absolute right-64px bottom-0 pointer-events-none" aria-hidden="true">
-        <Image src="/timeline/burung.png" alt="Timeline Background" fill className="object-contain" />
+      <div
+        className=" z-0 absolute right-64px bottom-0 pointer-events-none"
+        aria-hidden="true"
+      >
+        <Image
+          src="/timeline/burung.png"
+          alt="Timeline Background"
+          fill
+          className="object-contain"
+        />
       </div>
-      
-      
+
       <div className="container mx-auto max-w-6xl px-4">
-        
         <H2
           className="
             text-white text-center
@@ -55,18 +85,34 @@ const TimelineSection = () => {
                 className="flex flex-col md:flex-row items-center justify-center"
               >
                 {/* Image first on mobile, card second. On desktop we swap via md:order to keep alternating sides. */}
-                <div className={`relative w-full max-w-[636px] h-[167px] rounded-2xl 
+                <div
+                  className={`relative w-full max-w-[636px] h-[167px] rounded-2xl 
                   overflow-hidden z-0 pointer-events-none 
-                  ${isEven ? 'md:order-2 md:-translate-x-[5%]' : 'md:order-1 md:translate-x-[5%]'}`} aria-hidden="true">
-                  <div className={`absolute ${isEven ? 'right-0' : 'left-0'} 
-                  top-0 bottom-0 w-full md:w-full rounded-2xl overflow-hidden`}>
-                    <Image src={item.image} alt={item.title} fill className={`object-cover object-center md
-                      :${isEven ? 'object-right' : 'object-left'}`} />
-
+                  ${
+                    isEven
+                      ? "md:order-2"
+                      : "md:order-1"
+                  }`}
+                  aria-hidden="true"
+                >
+                  <div
+                    className={`absolute ${isEven ? "right-0" : "left-0"} 
+                  top-0 bottom-0 w-full md:w-full rounded-2xl overflow-hidden`}
+                  >
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className={`object-cover object-center md:${isEven ? "object-right" : "object-left"}`}
+                    />
                   </div>
                 </div>
 
-                <div className={`${isEven ? 'md:order-1' : 'md:order-2'} relative w-full max-w-[636px] min-h-[167px] z-10 -mt-6 md:mt-0`}> 
+                <div
+                  className={`${
+                    isEven ? "md:order-1 md:-mr-12" : "md:order-2 md:-ml-12"
+                  } relative w-full max-w-[636px] min-h-[167px] z-10 -mt-6 md:mt-0`}
+                >
                   {/* negative top margin on mobile so the card overlaps image to create a blended look */}
                   <TimelineCard {...item} onOpen={() => openPopup(item)} />
                 </div>
@@ -78,7 +124,6 @@ const TimelineSection = () => {
         {selectedCard && (
           <TimelinePopup data={selectedCard} onClose={closePopup} />
         )}
-
       </div>
     </section>
   );

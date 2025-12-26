@@ -8,7 +8,7 @@ export default function NavbarPhone () {
 
     return (
         <>
-    <div style={{ backgroundColor: "#BFDEEB", position: "sticky", top: 0, left: 0, zIndex: 50 }}>
+    <div style={{ backgroundColor: "#BFDEEB", position: "sticky", top: 0, left: 0, zIndex: 400 }}>
         <nav style={{
             width: "100%",
 

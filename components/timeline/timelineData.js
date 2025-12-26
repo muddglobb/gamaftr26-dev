@@ -7,7 +7,7 @@ export const timelineData = [
     description:
       "Simbolisasi pembukaan rangkaian kegiatan GAMAFTR 2025 sebagai langkah awal untuk menyapa seluruh siswa/i yang ada di Provinsi Riau.",
     image: "/timeline/openinggamaftr25.jpeg",
-    mapsUrl: "https://maps.app.goo.gl/aNdad2ZWoHeXR6677?g_st=ic", // Link to Google Maps Opening
+    mapsUrl: "https://maps.app.goo.gl/Nx5igP8pzGQBEJQn9", // Link to Google Maps Opening
   },
   {
     id: 2,
@@ -42,6 +42,6 @@ export const timelineData = [
       "Penutupan rangkaian kegiatan GAMAFTR 2025 yang akan mendatangkan Guest Star serta penampilan dari mahasiswa/i UGM sebagai puncak acara.",
     image: "/timeline/bedkam.jpeg",
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeWc36q-WbqgrOVw56Ymhsax7jY9izhIsPOx8QQY08rCYyZfg/viewform", // Google Form TOTIK
-    mapsUrl: "https://www.google.com/maps/place/BedahKampus+Venue", // Link to Google Maps Bedkam
+    mapsUrl: "https://maps.app.goo.gl/f5vrC3gBYxrNYPkb6", // Link to Google Maps Bedkam
   },
 ];

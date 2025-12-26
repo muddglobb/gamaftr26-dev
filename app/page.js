@@ -7,30 +7,23 @@ import footer from "@/components/footer";
 import Footer from "@/components/footer";
 import TimelineSection from "@/components/timeline/TimelineSection";
 import Hero from "../components/hero"
+import Navbar from "@/Custom/Navbar";
+import NavbarPhone from "@/Custom/NavbarPhone";
+import Sponsorbar from "@/Custom/Sponsorbar";
+import Testimonials from "@/components/Testimonials";
+import "../app/testimonials.module.css";
 
 const Page = () => {
   return (
     <div className="">
-      <Hero></Hero>
+      <Navbar/>
+      {/* <NavbarPhone/> */}
+      <Hero/>
       <AboutUs />
-      <img src="public/testfoto.jpg" alt="Test Foto" className="w-80 h-auto" />
       <TimelineSection />
-
-      <H1>HUMPUBIT</H1>
-      <H2>HUMPUBIT</H2>
-      <H3>HUMPUBIT</H3>
-      <H4>HUMPUBIT</H4>
-      <H5>HUMPUBIT</H5>
-      <H6>HUMPUBIT</H6>
-      <H7>HUMPUBIT</H7>
-      <B1>HUMPUBIT</B1>
-      <B2>HUMPUBIT</B2>
-      <B3>HUMPUBIT</B3>
-      <B4>HUMPUBIT</B4>
-      <B5>HUMPUBIT</B5>
-      <Button className="text-md">
-        <B3>Click Me</B3> <RightArrow />
-      </Button>
+      <div className="bg-white h-[3vw]"></div>
+      <Testimonials />
+      <Sponsorbar/>
       <Footer/>
     </div>
   );

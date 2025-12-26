@@ -11,7 +11,7 @@ import Countdown from "./countdown";
 
 const Hero = () => {
   return (
-    <div className="hero-section relative overflow-hidden bg-linear-to-b from-glacier-400 to-white">
+    <div className="hero-section relative overflow-hidden bg-linear-to-b from-glacier-400 to-white pt-16 md:pt-0">
         
         {/* Background Container */}
         <div className="hero-background absolute h-full w-full pointer-events-none">

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const AboutUs = () => {
   return (
@@ -10,201 +11,105 @@ const AboutUs = () => {
         min-h-[724px]
         flex
         items-center
-        bg-gradient-to-b
+        bg-linear-to-b
         from-[#FFFFFF]
-        to-[#B3D2C1]
+        to-amazon-200
 
         md:from-[#FFFFFF]  
-        md:to-[#B3D2C1]
+        md:to-amazon-200
         py-16
-        overflow-x-hidden
+        overflow-x-clip
+        overflow-y-visible
       "
     >
       {/* ================= ORNAMEN DESKTOP ================= */}
-      <img 
+      <Image 
         src="/AWAN 1.png" //kiri
-        className="hidden md:block absolute w-auto h-full object-cover -translate-x-75 -translate-y-90 max-w-none scale-50"
+        alt="Decorative cloud"
+        width={800}
+        height={600}
+        className="hidden md:block absolute -top-[9vw] left-0 w-[61vw] lg:w-[38vw] h-auto object-contain -translate-x-[20%] -translate-y-[33%] z-50"
       />
-      <img 
+      <Image 
         src="/AWAN 2.png" //kanan
-        className="hidden md:block absolute w-auto h-full object-cover translate-x-95 -translate-y-95 max-w-none scale-50"
+        alt="Decorative cloud"
+        width={800}
+        height={600}
+        className="hidden md:block absolute -top-[9vw] right-0 w-[61vw] lg:w-[38vw] h-auto object-contain translate-x-[20%] -translate-y-[33%] z-50"
       />
 
       {/* ================= ORNAMEN MOBILE ================= */}
-      <img
-      src="/AWAN 1.png"//kiri
-      className="
-        md:hidden
-        absolute
-        top-0
-        left-0
-        w-[180px]
-        scale-120
-        h-auto
-        object-contain
-        pointer-events-none
-        -translate-x-10
-        -translate-y-15
-      "
+      <Image
+        src="/AWAN 1.png" //kiri
+        alt="Decorative cloud"
+        width={300}
+        height={250}
+        className="md:hidden absolute -top-[8vw] left-0 w-[60vw] lg:w-[80vw] h-auto object-contain -translate-x-[25%] -translate-y-[33%] z-50"
       />
 
-      <img
-      src="/AWAN 2.png" //kanan
-      className="
-        md:hidden
-        absolute
-        top-0
-        right-0
-        w-[180px]
-        scale-120
-        h-auto
-        object-contain
-        pointer-events-none
-        translate-x-6
-        -translate-y-13
-        "
+      <Image
+        src="/AWAN 2.png" //kanan
+        alt="Decorative cloud"
+        width={300}
+        height={250}
+        className="md:hidden absolute -top-[8vw] right-0 w-[60vw] h-auto object-contain translate-x-[25%] -translate-y-[33%] z-50"
       />
 
-      <div className="max-w-[1280px] mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center">
 
         {/* ================= FOTO + FRAME ================= */}
-        <div
-          className="
-            relative
-            z-20
-            w-full
-            max-w-[220px]        /* ⬅ MOBILE: lebih kecil */
-            md:max-w-[420px]     /* ⬅ DESKTOP: TETAP */
-            mx-auto
-            lg:ml-0
-            translate-x-[6px]
-            translate-y-6
-            md:translate-y-10
-          "
-        >
-          <div className="relative w-full aspect-[371/291] md:w-[371px] md:h-[291px]">
-
-            {/* AWAN 3 MOBILE */}
-            <img
-              src="/AWAN 3.png"
-              className="
-                md:hidden
-                absolute
-                -z-30
-                w-[260px]
-                scale-200
-                h-auto
-                left-1/2
-                top-1/2
-                -translate-x-1/2
-                -translate-y-1/2
-                translate-x-22
-                -translate-y-2
-                rotate-[0deg]
-                pointer-events-none
-              "
-            />
+        <div className="relative z-20 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[420px] mx-auto">
+          <div className="relative w-full aspect-371/291">
 
             {/* FRAME BIRU */}
-            <div
-              className="
-                absolute
-                inset-0
-                bg-[#88BFD2]
-                rotate-[-6deg]
-                -translate-x-0
-                -translate-y-0
-                md:w-[387px]
-                md:h-[303px]
-                md:rotate-[-3deg]
-                md:-translate-x-3
-                md:-translate-y-[1px]
-              "
-            />
+            <div className="absolute inset-0 bg-glacier-400 -rotate-6 md:-rotate-3 -translate-x-1 -translate-y-1 md:-translate-x-3 md:-translate-y-px" />
 
             {/* FRAME HIJAU */}
-            <div
-              className="
-                absolute
-                inset-0
-                bg-[#89B19C]
-                rotate-[4deg] md:rotate-[2deg]
-                translate-x-0
-                translate-y-0.5
-                md:w-[387px]
-                md:h-[303px]
-                md:-translate-x-[10px]
-              "
-            />
+            <div className="absolute inset-0 bg-amazon-300 rotate-[4deg] md:rotate-2 translate-x-1 translate-y-1 md:-translate-x-2.5 md:translate-y-0.5" />
 
             {/* FOTO */}
-            <img
+            <Image
               src="/FOTO ABTS.png"
+              alt="GAMAFTR Team Photo"
+              width={371}
+              height={291}
+              priority
               style={{ imageRendering: "-webkit-optimize-contrast" }}
-              className="
-                relative
-                z-10
-                w-full
-                h-full
-                object-cover
-                shadow-xl
-                border-[4px]
-                border-[#F2D7D7]
-              "
+              className="relative z-10 w-full h-full object-cover shadow-lg md:shadow-xl border-2 md:border-4 border-[#F2D7D7]"
             />
           </div>
         </div>
 
         {/* ================= TEKS ================= */}
-        <div className="max-w-xl relative translate-y-0 md:translate-y-15">
+        <div className="relative max-w-2xl mx-auto md:pl-4">
           <h4
-            style={{ WebkitTextStroke: " #ECF5F0", textShadow: "0px 3px 3px #535353" }}
-            className="
-              text-[#1E2625]
-              text-2xl
-              md:text-4xl
-              lg:text-5xl
-              font-bold
-              mb-6
-              text-center
-              md:text-justify
-              md:-translate-x-20
-              lg:-translate-x-40
-            "
+            style={{ 
+              textShadow: `
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff,
+                -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px 1px 0 #fff,
+                1px 1px 0 #fff,
+                0px 3px 6px rgba(83, 83, 83, 0.3)
+              `
+            }}
+            className="text-amazon-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-center md:text-left"
           >
             Tentang Gamaftr
           </h4>
 
-          <div className="relative p-4 md:p-6">
-            {/* AWAN 3 DESKTOP (AMAN, TIDAK DIUBAH) */}
-            <img
-              src="/AWAN 3.png"
-              className="hidden md:block absolute top-0 left-0 w-auto h-full object-cover translate-x-35 -translate-y-58 max-w-none scale-80"
-            />
-
-            {/* DESKRIPSI — TIDAK DIUBAH */}
-            <div className="
-              relative
-              z-10
-              space-y-4
-              w-[98%]
-              mx-auto
-              md:w-[125%]
-              lg:w-[140%]
-              px-1
-              md:px-0
-              text-justify
-              -mt-6             /* ⬅ mobile: naik */
-              md:mt-0            /* ⬅ desktop: BALIK NORMAL */
-              md:-translate-x-20
-              lg:-translate-x-45
-            ">
-              <p className="text-[#1B2D33] font-sans font-bold leading-relaxed text-[12px] md:text-lg lg:text-xl">
+          <div className="relative">
+            {/* DESKRIPSI */}
+            <div className="relative z-10 space-y-3 md:space-y-4">
+              <p className="text-glacier-950 font-sans font-bold leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl text-justify">
                 Merupakan program kerja tahunan KEMARIGAMA (Keluarga Mahasiswa Riau
                 Gadjah Mada) yang setiap tahunnya sudah mengunjungi lebih dari 50 SMA
                 di Provinsi Riau.
               </p>
-              <p className="text-[#1B2D33] font-sans font-bold leading-relaxed text-[12px] md:text-lg lg:text-xl">
+              <p className="text-glacier-950 font-sans font-bold leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl text-justify">
                 GAMAFTR diinisiasikan untuk memperkenalkan Universitas Gadjah Mada (UGM)
                 kepada siswa dan siswi SMA/sederajat di Provinsi Riau.
               </p>
