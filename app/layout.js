@@ -27,6 +27,9 @@ const mochesa = localFont({
 export const metadata = {
   title: "GAMAFTR 2026",
   description: "Gadjah Mada FLies to Riau 2026",
+  icons: {
+    icon: "/LOGO.png",
+  },
 };
 
 export default function RootLayout({ children }) {
