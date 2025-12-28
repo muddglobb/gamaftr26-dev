@@ -62,8 +62,8 @@ const Countdown = ({ targetDate }) => {
       `}>
         
         {isFinished ? (
-          <span className="text-l md:text-l font-bold uppercase tracking-widest">
-            Waktu Habis!
+          <span className="text-l md:text-l font-bold tracking-widest">
+            Event Sudah Terlaksana!
           </span>
         ) : timerKeys.length > 0 ? (
           timerKeys.map((interval, index) => (

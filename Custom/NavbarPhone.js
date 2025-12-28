@@ -2,9 +2,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import { B1 } from "@/components/elements/typography";
+import { timelineData } from "@/components/timeline/timelineData";
 
 export default function NavbarPhone () {
     const [open, setOpen] = useState(false);
+    const tryOutData = timelineData.find(item => item.id === 3);
+    const ticketUrl = tryOutData?.formUrl || "#";
 
     return (
         <>
@@ -67,7 +70,8 @@ export default function NavbarPhone () {
 
 
                 <a
-                    href="google.com" 
+                    href={ticketUrl}
+                    target="_blank"
                     className="bg-[#087443] text-white px-5 py-3 rounded-xl text-lg text-center">
                     Pesan Tiket
                 </a>

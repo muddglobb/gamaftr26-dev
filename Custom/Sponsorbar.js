@@ -29,10 +29,10 @@ export default function Sponsorbar() {
           }}
           className="text-2xl sm:text-3xl md:text-4xl mb-6 md:mb-8"
         >
-          TERIMA KASIH KEPADA
+          Terima Kasih Kepada
         </H3>
 
-        <H6 
+        {/* <H6 
           style={{
             color: "#294852",
             textShadow: `
@@ -45,10 +45,9 @@ export default function Sponsorbar() {
           }}
           className="text-xl sm:text-2xl md:text-3xl mb-4 md:mb-6"
         >
-          SPONSOR
+          Sponsor
         </H6>
 
-        {/* Sponsor Logos Container */}
         <div className="w-full max-w-6xl mb-12 md:mb-16">
           <div className="relative w-full">
             <Image
@@ -60,7 +59,7 @@ export default function Sponsorbar() {
               className="w-full h-auto rounded-2xl"
             />
           </div>
-        </div>
+        </div> */}
 
         <H6 
           style={{
@@ -75,14 +74,14 @@ export default function Sponsorbar() {
           }}
           className="text-xl sm:text-2xl md:text-3xl mb-4 md:mb-6"
         >
-          MEDIA PARTNER
+          Media Partner
         </H6>
 
         {/* Media Partner Logos Container */}
         <div className="w-full max-w-6xl">
           <div className="relative w-full">
             <Image
-              src="/coming soon.png"
+              src="/medpart.webp"
               width={1200}
               height={400}
               alt="Media Partner"
