@@ -86,7 +86,7 @@ const TimelineSection = () => {
               >
                 {/* Image first on mobile, card second. On desktop we swap via md:order to keep alternating sides. */}
                 <div
-                  className={`relative w-full max-w-[636px] h-[167px] rounded-2xl 
+                  className={`relative w-full max-w-[636px] min-h-[167px] md:h-[167px] rounded-2xl 
                   overflow-hidden z-0 pointer-events-none 
                   ${
                     isEven
@@ -111,7 +111,7 @@ const TimelineSection = () => {
                 <div
                   className={`${
                     isEven ? "md:order-1 md:-mr-12" : "md:order-2 md:-ml-12"
-                  } relative w-full max-w-[636px] min-h-[167px] z-10 -mt-6 md:mt-0`}
+                  } relative w-full max-w-[636px] z-10 -mt-6 md:mt-0`}
                 >
                   {/* negative top margin on mobile so the card overlaps image to create a blended look */}
                   <TimelineCard {...item} onOpen={() => openPopup(item)} />
