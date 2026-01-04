@@ -13,15 +13,15 @@ const testimonialData = [
       "tryout gamaftr itu ngebantu aku untuk belajar dalam utbk. dari soal-soal tryoutnya aku bisa dapat gambaran untuk utbk nanti dan juga ngukur kemampuan sendiri dan tau bagian mana yang masih perlu aku pelajarin lagi panitia gamaftrnya humble dan juga helpful jadi ga segan untuk tanya tanya seputar to dan juga informasi tentang UGM. rate keseluruhan acara 100/10!!",
     photo: "/haniifah_1.webp",
   },
-  // {
-  //   id: 2,
-  //   category: "Bedah Kampus",
-  //   name: "Siti Nurhaliza",
-  //   status: "Siswa SMA Negeri 5",
-  //   testimonial:
-  //     "Seminar motivasi dari kakak-kakak UGM sangat menginspirasi. Saya jadi lebih semangat untuk belajar dan mengejar impian kuliah di UGM.",
-  //   photo: "/LOGO.png",
-  // },
+  {
+    id: 2,
+    category: "Bedah Kampus",
+    name: "Genevieve Tan",
+    status: "Peserta Bedah Kampus GAMAFTR 2025",
+    testimonial:
+      "Bedah Kampus GAMAFTR 2025 memberikan pengalaman yang seru dan informatif. Melalui sharing session, talk show, dan faculty fair, saya mendapatkan gambaran yang lebih jelas tentang dunia perkuliahan, sehingga semakin yakin memilih fakultas dan Universitas Gadjah Mada.",
+    photo: "/jenjen.webp",
+  },
 ];
 
 const Testimonials = () => {
@@ -80,7 +80,7 @@ const Testimonials = () => {
         </h2>
 
         {/* Testimonial Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-1 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 max-w-6xl mx-auto">
           {testimonialData.map((testimonial) => (
             <TestimonialCard
               key={testimonial.id}
