@@ -106,7 +106,7 @@ const AboutUs = () => {
             <div className="relative z-10 space-y-3 md:space-y-4">
               <p className="text-glacier-950 font-sans font-bold leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl text-justify">
                 Merupakan program kerja tahunan KEMARIGAMA (Keluarga Mahasiswa Riau
-                Gadjah Mada) yang setiap tahunnya sudah mengunjungi lebih dari 50 SMA
+                Gadjah Mada) yang setiap tahunnya sudah mengunjungi lebih dari 90 SMA
                 di Provinsi Riau.
               </p>
               <p className="text-glacier-950 font-sans font-bold leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl text-justify">
