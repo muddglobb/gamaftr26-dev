@@ -79,7 +79,7 @@ function Footer() {
 
         
         <div className="BAGIANBAWAH flex flex-col items-center text-center w-full gap-1">
-        <B1 className="text-white font-bold">GAMAFTR 2025 - All Rights Reserved</B1>
+        <B1 className="text-white font-bold">GAMAFTR 2026 - All Rights Reserved</B1>
         <B2 className="text-white leading-relaxed">In Collaboration with Rafael Mahardika</B2>
         </div>
 

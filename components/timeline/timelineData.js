@@ -13,7 +13,7 @@ export const timelineData = [
     id: 2,
     title: "Roadshow",
     date: "5–15 Januari 2026",
-    location: "80+ SMA/SMK/MA",
+    location: "90+ SMA/SMK/MA",
     description:
       "Rangkaian sosialisasi kepada siswa kelas 12 SMA/SMK/MA/Sederajat di Provinsi Riau yang akan dilaksanakan secara luring maupun daring.",
     image: "/timeline/roadshowgamaftr.jpeg",
@@ -27,7 +27,7 @@ export const timelineData = [
     description:
       "GAMAFTR 2025 menyediakan wadah bagi siswa/i di Provinsi Riau yang ingin mempersiapkan diri masuk Perguruan Tinggi serta menguji kemampuannya.",
     image: "/timeline/tryout.jpeg",
-    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4p09pS_A-xRf8mnE7V2kmpqfPHR7LTG7GDA7Ne-J9-Ir4pQ/viewform", // Google Form TOTIK
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSej0wJAPFyyGZlPLvJhbfEOaAo4PK5hngUMyKsv-CD-IJdpbg/viewform", // Google Form TOTIK
     maps: [
       { label: "Try Out di Kota Pekanbaru", url: "https://www.google.com/maps/place/TryOut+KotaA" },
       { label: "Try Out di Kota Duri", url: "https://www.google.com/maps/place/TryOut+KotaB" },
@@ -41,7 +41,7 @@ export const timelineData = [
     description:
       "Penutupan rangkaian kegiatan GAMAFTR 2025 yang akan mendatangkan Guest Star serta penampilan dari mahasiswa/i UGM sebagai puncak acara.",
     image: "/timeline/bedkam.jpeg",
-    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSc4p09pS_A-xRf8mnE7V2kmpqfPHR7LTG7GDA7Ne-J9-Ir4pQ/viewform", // Google Form TOTIK
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSej0wJAPFyyGZlPLvJhbfEOaAo4PK5hngUMyKsv-CD-IJdpbg/viewform", // Google Form TOTIK
     mapsUrl: "https://maps.app.goo.gl/f5vrC3gBYxrNYPkb6", // Link to Google Maps Bedkam
   },
 ];
