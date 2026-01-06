@@ -37,7 +37,7 @@ export const timelineData = [
     id: 4,
     title: "Bedah Kampus",
     date: "25 Januari 2026",
-    location: "Susiana Tabrani Conevntion Hall",
+    location: "Susiana Tabrani Convention Hall",
     description:
       "Penutupan rangkaian kegiatan GAMAFTR 2025 yang akan mendatangkan Guest Star serta penampilan dari mahasiswa/i UGM sebagai puncak acara.",
     image: "/timeline/bedkam.jpeg",
