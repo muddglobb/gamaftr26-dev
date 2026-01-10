@@ -18,7 +18,7 @@ const TimelinePopup = ({ data, onClose }) => {
 
   return (
     
-    <div className=" gap-0.5 fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 animate-fadeIn">
+    <div className=" gap-0.5 fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-150 animate-fadeIn">
         <div className="bg-white p-1 rounded-xl w-[700px] max-h-[90vh]">
         <div className="bg-white rounded-xl p-5 w-full h-full gap-1 overflow-y-auto relative border-3 border-dashed border-amazon-800 animate-slideUp">
 
