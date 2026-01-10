@@ -60,7 +60,7 @@ const Testimonials = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-20 container mx-auto px-4 py-12 md:py-16 lg:py-20">
+      <div className="relative container mx-auto px-4 py-12 md:py-16 lg:py-20">
         {/* Title */}
         <h2
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-12 md:mb-16"
