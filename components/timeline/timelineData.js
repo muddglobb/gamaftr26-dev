@@ -23,14 +23,14 @@ export const timelineData = [
     id: 3,
     title: "Try Out",
     date: "17–18 Januari 2026",
-    location: "TBA",
+    location: "-",
     description:
       "GAMAFTR 2025 menyediakan wadah bagi siswa/i di Provinsi Riau yang ingin mempersiapkan diri masuk Perguruan Tinggi serta menguji kemampuannya.",
     image: "/timeline/tryout.jpeg",
     formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSej0wJAPFyyGZlPLvJhbfEOaAo4PK5hngUMyKsv-CD-IJdpbg/viewform", // Google Form TOTIK
     maps: [
-      { label: "Try Out di Kota Pekanbaru", url: "https://www.google.com/maps/place/TryOut+KotaA" },
-      { label: "Try Out di Kota Duri", url: "https://www.google.com/maps/place/TryOut+KotaB" },
+      { label: "Try Out di Kota Pekanbaru", url: "https://maps.app.goo.gl/ZTT54CY2xWrixDGR8" },
+      { label: "Try Out di Kota Duri", url: "https://maps.app.goo.gl/RE2sqYWDweQFjgbw9" },
     ],// Two Google Maps options
   },
   {
